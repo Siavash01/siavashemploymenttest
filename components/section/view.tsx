@@ -14,6 +14,7 @@ export function Section({children, title}: Props): React.JSX.Element {
 
     useEffect(() => {
         req();
+        
     },
     [state]
     );

@@ -27,6 +27,7 @@ import {
 import { Section } from './components/section';
 import { styles } from './components/section/style';
 import InstaStory from 'react-native-insta-story';
+import { CatGrid } from './components/catgrid/view';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -40,7 +41,7 @@ function App(): React.JSX.Element {
       user_id: 1,
       user_image:
         'https://picsum.photos/200/200',
-      user_name: 'Ahmet Çağlar Durmuş',
+      user_name: 'Test1',
       stories: [
         {
           story_id: 1,
@@ -60,7 +61,7 @@ function App(): React.JSX.Element {
       user_id: 2,
       user_image:
         'https://picsum.photos/200/200',
-      user_name: 'Test User',
+      user_name: 'Test2',
       stories: [
         {
           story_id: 1,
@@ -75,6 +76,86 @@ function App(): React.JSX.Element {
             'https://picsum.photos/600/1200',
           swipeText: 'Custom swipe text for this story',
           onPress: () => console.log('story 2 swiped'),
+        },
+      ],
+    },
+    {
+      user_id: 3,
+      user_image:
+        'https://picsum.photos/200/200',
+      user_name: 'Test3',
+      stories: [
+        {
+          story_id: 1,
+          story_image:
+            'https://picsum.photos/600/1200',
+          swipeText: 'Custom swipe text for this story',
+          onPress: () => console.log('story 1 swiped'),
+        },
+        {
+          story_id: 2,
+          story_image:
+            'https://picsum.photos/600/1200',
+        },
+      ],
+    },
+    {
+      user_id: 4,
+      user_image:
+        'https://picsum.photos/200/200',
+      user_name: 'Test1',
+      stories: [
+        {
+          story_id: 1,
+          story_image:
+            'https://picsum.photos/600/1200',
+          swipeText: 'Custom swipe text for this story',
+          onPress: () => console.log('story 1 swiped'),
+        },
+        {
+          story_id: 2,
+          story_image:
+            'https://picsum.photos/600/1200',
+        },
+      ],
+    },
+    {
+      user_id: 5,
+      user_image:
+        'https://picsum.photos/200/200',
+      user_name: 'Test1',
+      stories: [
+        {
+          story_id: 1,
+          story_image:
+            'https://picsum.photos/600/1200',
+          swipeText: 'Custom swipe text for this story',
+          onPress: () => console.log('story 1 swiped'),
+        },
+        {
+          story_id: 2,
+          story_image:
+            'https://picsum.photos/600/1200',
+        },
+      ],
+    },
+    {
+      user_id: 6,
+      user_image:
+        'https://picsum.photos/200/200',
+      user_name: 'Test1',
+      stories: [
+        {
+          story_id: 1,
+          story_image:
+            'https://picsum.photos/600/1200',
+          swipeText: 'Custom swipe text for this story',
+          onPress: () => console.log('story 1 swiped'),
+        },
+        {
+          story_id: 2,
+          story_image:
+            'https://picsum.photos/600/1200',
         },
       ],
     },
@@ -97,6 +178,7 @@ function App(): React.JSX.Element {
               data={data}
               duration={10}
             />
+          <CatGrid title='test3'></CatGrid>
         </View>
       </ScrollView>
     </SafeAreaView>
